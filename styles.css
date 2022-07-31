@@ -207,14 +207,14 @@ select:hover,
 .list-item-del-button {
   margin: 0.5rem;
   border: none;
-  background-color: rgb(206, 67, 95);
-  box-shadow: 2px 2px 2px black;
-  transition: all 0.15s ease-out;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: black;
 }
 
 .list-item-del-button:hover {
-  filter: brightness(90%);
-  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 input[type="color"] {
@@ -271,4 +271,26 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="text"]:focus {
   outline: 2px solid #0f62fe;
   outline-offset: -2px;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    background-color: var(--prim-accent);
+  }
+
+  #main-container {
+    flex-direction: column;
+    margin-inline: 0;
+    margin: 0;
+  }
+
+  #all-menus-container {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: scroll;
+  }
+
+  #list {
+    margin-top: 0.5rem;
+  }
 }
