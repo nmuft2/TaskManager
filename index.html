@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Task Manager</h1>
+    <div id="main-container">
+      <div id="all-menus-container">
+        <div id="menu" class="menus">
+          <input
+            type="text"
+            id="input-todo"
+            class="inputs"
+            placeholder="Enter Todo"
+          />
+          <input
+            type="datetime-local"
+            class="inputs"
+            placeholder="Due Date"
+            id="due-date-input"
+            style="display: none"
+          />
+          <select name="" id="group-select" class="inputs">
+            <option value="ALL TASKS">ALL TASKS</option>
+          </select>
+
+          <button id="input-submit" class="inputs menu-buttons">
+            ADD TODO
+          </button>
+        </div>
+
+        <div id="group-menu" class="menus">
+          <div id="group-inputs">
+            <input
+              type="text"
+              id="input-group-name"
+              class="inputs"
+              placeholder="Group Name"
+            />
+
+            <input
+              type="color"
+              id="input-group-color"
+              class="inputs"
+              value="#ffffff"
+            />
+          </div>
+          <button class="inputs menu-buttons" id="add-group-button">
+            CREATE GROUP
+          </button>
+        </div>
+
+        <div id="group-display" class="menus">
+          <div class="group-on-display">
+            <p>ALL TASKS</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="list"></div>
+    </div>
+  </body>
+</html>
