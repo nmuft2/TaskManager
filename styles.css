@@ -66,6 +66,7 @@ h1 {
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: var(--prim-accent);
 }
 
 #all-menus-container {
@@ -179,7 +180,7 @@ select:hover,
   flex-direction: column;
   height: max-content;
   max-height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
   margin-inline: 5px;
   justify-content: space-around;
   border-radius: 5px;
@@ -286,11 +287,33 @@ input[type="text"]:focus {
 
   #all-menus-container {
     width: 100%;
-    max-height: 200px;
+    max-height: 500px;
     overflow-y: scroll;
   }
 
   #list {
     margin-top: 0.5rem;
+    overflow-y: scroll;
+  }
+
+  .inputs {
+    margin: 0.5rem;
+  }
+
+  #group-menu {
+    flex-direction: row;
+  }
+
+  #group-display {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  #group-menu {
+    justify-content: space-between;
+  }
+
+  #add-group-button {
+    padding: 5px;
   }
 }
