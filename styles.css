@@ -126,7 +126,7 @@ select:hover,
 #group-display {
   background-color: var(--prim-accent);
   max-height: 300px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .group-on-display {
