@@ -90,6 +90,7 @@ h1 {
 .inputs {
   margin: 1rem;
   transition: all 0.2s ease-in;
+  color: black;
 }
 
 select {
@@ -121,7 +122,7 @@ select:hover,
 }
 
 #group-display {
-  background-color: red;
+  background-color: var(--prim-accent);
   max-height: 300px;
   overflow-y: scroll;
 }
@@ -152,6 +153,7 @@ select:hover,
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  color: black;
 }
 
 .group-delete-button:hover {
