@@ -91,7 +91,8 @@ h1 {
 .inputs {
   margin: 1rem;
   transition: all 0.2s ease-in;
-  color: black;
+  color: white;
+  background-color: var(--sec-accent
 }
 
 select {
