@@ -11,6 +11,14 @@ var currentGroupLoaded = 'ALL TASKS'
 var coll = document.getElementsByClassName("collapsible-content");
 
 
+// get a new date (locale machine date time)
+var date = new Date();
+// get the date as a string
+var n = date.toDateString();
+// get the time as a string
+var time = date.toLocaleTimeString();
+document.getElementById('title').innerHTML = n 
+
 
 
 loadTodosFromLocalStorage()
@@ -165,6 +173,16 @@ document.addEventListener("click", e => {
     else if (e.target.className == 'group-delete-button') {
         var groupWeWantToDelete = e.target.previousSibling.innerHTML
    
+        //delete from select list
+        Array.from(groupSelectDropdown.children).forEach(groupOption => {
+            var groupName = groupOption.innerHTML
+            if (groupName == groupWeWantToDelete){
+                groupOption.parentNode.removeChild(groupOption)
+
+
+            }})
+
+
 
 
 
@@ -203,11 +221,6 @@ document.addEventListener("click", e => {
             
 
 
-
-
-        }
-
-        function openModal(){
 
 
         }

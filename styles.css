@@ -317,4 +317,8 @@ input[type="text"]:focus {
   #add-group-button {
     padding: 5px;
   }
+
+  .menu-buttons:hover {
+    transition: none;
+  }
 }
