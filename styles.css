@@ -337,6 +337,6 @@ select:focus {
   }
 
   .menu-buttons:hover {
-    transition: none;
+    filter: brightness(100%);
   }
 }
