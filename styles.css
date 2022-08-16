@@ -238,7 +238,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
   border: none;
 }
-
+/* 
 .menu-buttons {
   outline: 0;
   grid-gap: 8px;
@@ -268,10 +268,17 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 .menu-buttons:focus-visible {
   outline-offset: 1px;
+} */
+
+.menu-buttons {
+  padding: 1rem;
+  background-color: #707070;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 input[type="text"]:focus {
-  outline: 2px solid #0f62fe;
+  outline: 2px solid #1b1b1b;
   outline-offset: -2px;
 }
 
