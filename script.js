@@ -250,6 +250,8 @@ document.addEventListener("click", e => {
 })
 
 addGroupButton.addEventListener("click", e => {
+    if (groupName.value != "") {
+
     var newGroupOption = document.createElement('option')
     newGroupOption.innerHTML = groupName.value
     groupSelectDropdown.appendChild(newGroupOption)
@@ -288,26 +290,27 @@ addGroupButton.addEventListener("click", e => {
     addGroupDisplay()
 
     groupName.value = ''
+}
 })
 
 
-document.addEventListener('keydown', e => {
-    //FOR DEBUGGINH
-    if (e.key == 'l') {
+// document.addEventListener('keydown', e => {
+//     //FOR DEBUGGINH
+//     if (e.key == 'l') {
 
-        console.log(localStorage)
-    }
-    else if (e.key == 'Enter') {
-        submitButton.click()
+//         console.log(localStorage)
+//     }
+//     else if (e.key == 'Enter') {
+//         submitButton.click()
 
-    }
+//     }
 
-    else if (e.key == 'c' && e.metaKey == true) {
-        localStorage.clear()
-    }
+//     else if (e.key == 'c' && e.metaKey == true) {
+//         localStorage.clear()
+//     }
   
 
-})
+// })
 
 
 function loadTodosFromLocalStorage(){
@@ -416,8 +419,7 @@ function loadTodosFromLocalStorage(){
 
 }
 
-function createGroup() {
-}
+
 
 
 function createNewTodo(todoText) {
